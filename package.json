@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vdeturckheim/test-x-builds/issues"
   },
-  "homepage": "https://github.com/vdeturckheim/test-x-builds#readme"
+  "homepage": "https://github.com/vdeturckheim/test-x-builds#readme",
+  "dependencies": {
+    "detect-libc": "^1.0.3"
+  }
 }
