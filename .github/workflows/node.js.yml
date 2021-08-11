@@ -37,4 +37,6 @@ jobs:
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@v1
+      - run: |
+          echo "Platforms: ${{ steps.buildx.outputs.platforms }}"
       - run: docker build --platform linux/arm/v7 -f arm32v7.Dockerfile .
