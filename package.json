@@ -1,0 +1,20 @@
+{
+  "name": "test-x-builds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdeturckheim/test-x-builds.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdeturckheim/test-x-builds/issues"
+  },
+  "homepage": "https://github.com/vdeturckheim/test-x-builds#readme"
+}
