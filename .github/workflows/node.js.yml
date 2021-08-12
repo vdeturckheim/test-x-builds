@@ -20,5 +20,5 @@ jobs:
         uses: docker/setup-buildx-action@v1
       - run: |
           echo "Platforms: ${{ steps.buildx.outputs.platforms }}"
-      - run: docker build --platform linux/arm/v7 -f arm32v7.Dockerfile . -t testC
-      - run: docker run --platform linux/arm/v7 testC
+      - run: docker build --platform linux/arm/v7 -f arm32v7.Dockerfile . -t testc
+      - run: docker run --platform linux/arm/v7 testc
