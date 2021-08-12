@@ -1,6 +1,6 @@
-FROM arm32v7/node
+FROM arm32v7/node:14
 
 WORKDIR /app
 COPY . .
 RUN npm i
-RUN npm t
+CMD ["npm", "t"]
