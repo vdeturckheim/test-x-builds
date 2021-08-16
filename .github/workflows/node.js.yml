@@ -24,7 +24,7 @@ jobs:
 #      - run: docker run --platform linux/arm/v7 testc
 #
   windows:
-    runs-on: windows-latest
+    runs-on: windows-2019
     name: Node sample
     steps:
       - uses: actions/checkout@v2
