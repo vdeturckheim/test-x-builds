@@ -28,7 +28,7 @@ jobs:
     name: Node sample
     steps:
       - uses: actions/checkout@v2
-      - run: docker build win.Dockerfile . -t testc
+      - run: docker build -f win.Dockerfile . -t testc
       - run: docker run testc
 
 
