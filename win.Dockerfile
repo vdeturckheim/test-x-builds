@@ -6,7 +6,6 @@ RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/d
 RUN Expand-Archive -Path nodejs.zip -DestinationPath C:\;
 RUN Rename-Item -Path "C:\\node-v14.17.5-win-x64" -NewName C:\nodejs;
 
-WORKDIR C:\nodejs
 RUN SETX PATH C:\nodejs
 RUN npm config set registry https://registry.npmjs.org/
 
