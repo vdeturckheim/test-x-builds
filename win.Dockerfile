@@ -12,7 +12,7 @@ RUN npm config set registry https://registry.npmjs.org/
 WORKDIR /app
 
 WORKDIR /app
-COPY COPY . /app/
+COPY . /app/
 RUN npm install
 
 CMD ["npm", "t"]
