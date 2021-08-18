@@ -10,6 +10,16 @@ on:
     branches: [ main ]
 
 jobs:
+  mat:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dim1: [a, b, c]
+        dim2: [x, y, z]
+    steps:
+      - run: echo "${{ matrix.dim1 }} - ${{ matrix.dim2 }}"
+
+
 #  qemu:
 #    runs-on: ubuntu-latest
 #    steps:
@@ -23,12 +33,12 @@ jobs:
 #      - run: docker build --platform linux/arm/v7 -f arm32v7.Dockerfile . -t testc
 #      - run: docker run --platform linux/arm/v7 testc
 #
-  windows:
-    runs-on: windows-2019
-    name: Node sample
-    steps:
-      - uses: actions/checkout@v2
-      - run: docker build -f win.Dockerfile . -t testc
-      - run: docker run testc
+#  windows:
+#    runs-on: windows-2019
+#    name: Node sample
+#    steps:
+#      - uses: actions/checkout@v2
+#      - run: docker build -f win.Dockerfile . -t testc
+#      - run: docker run testc
 
 
